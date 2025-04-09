@@ -15,20 +15,23 @@
 .tasks__content--done {
     text-decoration: line-through;
 }
+
 .tasks__button {
     background-color: green;
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     border: none;
 }
 
 .tasks__button--done {
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     background-color: green;
     color: white;
 }
 
 .tasks__button--remove {
+    width: 30px;
+    height: 30px;
     background-color: rgb(235, 17, 17);
 }

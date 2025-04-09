@@ -27,7 +27,6 @@
         render();
     };
 
-
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-removeTaskButton");
 
@@ -46,20 +45,19 @@
         });
     };
 
-
     const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
                     <li class="tasks__item"> 
-                    <button class="tasks__button ${task.done ? "tasks__button--done" : ""} js-completedTaskButton">
-                        ${task.done ? "✓" : ""}
-                    </button>
-                    <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
-                        ${task.content}
-                    </span>                
-                    <button class="tasks__button--remove js-removeTaskButton">🗑</button>
+                        <button class="tasks__button ${task.done ? "tasks__button--done" : ""} js-completedTaskButton">
+                           ${task.done ? "✓" : ""}
+                        </button>
+                        <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
+                           ${task.content}
+                        </span>                
+                        <button class="tasks__button--remove js-removeTaskButton">🗑</button>
                     </li>
             `;
         }
