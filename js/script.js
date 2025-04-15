@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "First task",
-            done: false,
-        },
-        {
-            content: "Second task",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -28,17 +19,17 @@
     };
 
     const bindEvents = () => {
-        const removeButtons = document.querySelectorAll(".js-removeTaskButton");
+        const removeButton = document.querySelectorAll(".js-removeTaskButton");
 
-        removeButtons.forEach((removeButton, index) => {
+        removeButton.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
                 removeTask(index);
             });
         });
 
-        const toggleTaskDoneButtons = document.querySelectorAll(".js-completedTaskButton");
+        const toggleTaskDoneButton = document.querySelectorAll(".js-completedTaskButton");
 
-        toggleTaskDoneButtons.forEach((toggleTaskDoneButton, index) => {
+        toggleTaskDoneButton.forEach((toggleTaskDoneButton, index) => {
             toggleTaskDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
             });
@@ -57,7 +48,8 @@
                         <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
                            ${task.content}
                         </span>                
-                        <button class="tasks__button tasks__button--remove js-removeTaskButton">🗑</button>
+                        <button class="tasks__button tasks__button--remove js-removeTaskButton">🗑
+                        </button>
                     </li>
             `;
         }
@@ -71,12 +63,14 @@
         event.preventDefault();
         const newTaskElement = document.querySelector(".js-newTask");
         const newTaskContent = newTaskElement.value.trim();
+
         if (newTaskContent === "") {
             newTaskElement.focus();
             return;
         }
 
         newTaskElement.focus();
+
         addNewTask(newTaskContent);
     };
 

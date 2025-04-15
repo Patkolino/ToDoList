@@ -30,8 +30,6 @@
 }
 
 .tasks__button--done {
-    width: 30px;
-    height: 30px;
     background-color: rgb(9, 140, 9);
     color: white;
 }
@@ -41,8 +39,6 @@
 }
 
 .tasks__button--remove {
-    width: 30px;
-    height: 30px;
     background-color: rgb(235, 17, 17);
 }
 
