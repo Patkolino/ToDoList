@@ -9,12 +9,9 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     grid-gap: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     border-bottom: 1px solid #ddd;
-}
-
-.tasks__content--done {
-    text-decoration: line-through;
+    word-break: break-word;
 }
 
 .tasks__button {
@@ -37,6 +34,10 @@
     height: 30px;
     background-color: rgb(9, 140, 9);
     color: white;
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
 }
 
 .tasks__button--remove {
