@@ -61,6 +61,7 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        
         const newTaskElement = document.querySelector(".js-newTask");
         const newTaskContent = newTaskElement.value.trim();
 
