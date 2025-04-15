@@ -32,5 +32,5 @@ Simple web application that allows users to create **To do list** with options t
 - Grid layout model was used
 - Page icon was added
 - Additional styles are added to buttons in various states, in order to provide better visual representation for user
-- @media at-rule was placed so that application is properly and correctly displayed on lower resolution <div>![To do list application - mobile preview](images/MobilePreview.jpg)</div
+- @media at-rule was placed so that application is properly and correctly displayed on lower resolution <div>![To do list application - mobile preview](images/MobilePreview.jpg)</div>
 - Added focus to the input field, allowing quicker, easier and more intuitive application usage
